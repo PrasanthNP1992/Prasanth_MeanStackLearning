@@ -1,1 +1,2 @@
 THis is a text file to learn pull commands
+Learn Pull Command After Git Fetch & Merge
