@@ -8,6 +8,14 @@
            border:1px solid black ;
            text-align: center;
            padding: 8;
+           border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        tr:first-child{
+            background-color: aqua;
         }
 
         td:first-child {
@@ -26,7 +34,7 @@
 <body>
     <h1> This is the homework for the TABLE </h1>
 
-    <table bgcolor="aqua" border="1">
+    <table border="1" style="width:40%">
         <tr>
             <th> Day/Period </th>
             <th> 1 </th>
