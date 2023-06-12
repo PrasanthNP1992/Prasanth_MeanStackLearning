@@ -1,0 +1,45 @@
+
+#ab{
+    color:green;
+    font-family: sans-serif;
+    
+}
+
+body{
+    background-color: lightblue; 
+    background-image: url("D:/MeanStack/Prasanth_MeanStackLearning/HTML/HDImage.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: 0;
+    background-origin: padding-box;
+}
+
+#c{
+    color:darkgray;
+    font-style: oblique;
+}   
+
+#d{
+    color:darkorange;
+    font-weight: 300;
+}
+
+.xyz{
+    color:chocolate;
+    font-style: initial;
+}
+
+.cdf{
+    color:darkmagenta
+}
+
+*{
+    color:darkgoldenrod;
+}
+
+input{
+    text-align: center;
+    margin-right: 10;
+}
