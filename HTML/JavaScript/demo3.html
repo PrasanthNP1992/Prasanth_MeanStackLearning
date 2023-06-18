@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function ab1(){
+                aa= parseInt(document.f2.a.value);
+                bb= parseInt(document.f2.b.value);
+                sum= aa + bb;
+                document.f2.result.value = sum;
+            }
+
+            function sub(){
+                aa= parseInt(document.f3.a.value);
+                bb= parseInt(document.f3.b.value);
+                sum= aa - bb;
+                document.f3.result.value = sum;
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <form name="f1">
+                <label for="fn"> First Name</label>
+                <input  id="fn" name="fn" type="text">
+
+                <label for="ln"> LastName</label>
+                <input  id="ln" name="ln" type="text">
+
+                <label for="ln"> Full Name</label>
+                <input  id="fullname" name="fullname" type="text">
+
+
+                <input type="button" value="SUBMIT" onclick="abc()">
+            </form>
+
+            <form name="f2">
+                <label for="a"> A Value </label>
+                <input   name="a" type="text">
+
+                <label for="b"> B Value</label>
+                <input   name="b" type="text">
+
+                <label for="result"> REsult </label>
+                <input  name="result" type="text">
+
+
+                <input type="button" value="ADD" onclick="ab1()">
+            </form>
+
+            <form name="f3">
+                <label for="a"> A Value </label>
+                <input   name="a" type="text">
+
+                <label for="b"> B Value</label>
+                <input   name="b" type="text">
+
+                <label for="result"> REsult </label>
+                <input  name="result" type="text">
+
+
+                <input type="button" value="SUB" onclick="sub()">
+            </form>
+
+        </div>
+    </body>
+</html>
