@@ -18,6 +18,19 @@
                 document.f3.result.value = sum;
             }
 
+            function mul(){
+                aa= parseInt(document.f3.a.value);
+                bb= parseInt(document.f3.b.value);
+                sum= aa * bb;
+                document.f3.result.value = sum;
+            }
+            
+            function div(){
+                aa= parseInt(document.f3.a.value);
+                bb= parseInt(document.f3.b.value);
+                sum= aa / bb;
+                document.f3.result.value = sum;
+            }
         </script>
     </head>
 
@@ -46,9 +59,8 @@
 
                 <label for="result"> REsult </label>
                 <input  name="result" type="text">
-
-
                 <input type="button" value="ADD" onclick="ab1()">
+
             </form>
 
             <form name="f3">
@@ -58,11 +70,14 @@
                 <label for="b"> B Value</label>
                 <input   name="b" type="text">
 
-                <label for="result"> REsult </label>
+                <label for="result"> Result </label>
                 <input  name="result" type="text">
 
-
+                <input type="button" value="MUL" onclick="div()">
                 <input type="button" value="SUB" onclick="sub()">
+                <input type="button" value="DIV" onclick="mul()">
+            
+
             </form>
 
         </div>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function add(){
+        
+            eng = parseInt(document.subjects.english.value);
+
+            tam = parseInt(document.subjects.tamil.value);
+
+            maths = parseInt(document.subjects.maths.value);
+
+            social = parseInt(document.subjects.social.value);
+
+            cs = parseInt(document.subjects.computerscience.value);
+
+            french = parseInt(document.subjects.french.value);
+            
+            total1 = eng+tam+maths+social+cs+french;
+
+            document.subjects.total.value = total1;
+
+            document.subjects.percentage.value = total1/6;
+
+        }
+
+        function reset(){
+            document.getElementById(subjects).reset;
+        }
+    </script>
+</head>
+
+<body>
+    
+    <form name="subjects">     
+        <label for="english"> English </label>
+        <input   id="english" name="english" type="text">
+        <br>
+        <br>
+        <label for="tamil"> Tamil </label>
+        <input   id="tamil" name="tamil" type="text">
+        <br>
+        <br>
+        <label for="maths"> Mathamatics </label>
+        <input   id="maths" name="maths" type="text">
+        <br>
+        <br>
+        <label for="social"> Social </label>
+        <input   id="social" name="social" type="text">
+        <br>
+        <br>
+        <label for="computerscience"> Computer </label>
+        <input   id="computerscience" name="computerscience" type="text">
+        <br>
+        <br>
+        <label for="french"> French </label>
+        <input   id="french" name="french" type="text">
+        <br>
+        <br>
+        <label for="total"> Total </label>
+        <input  id="total" name="total" type="text">
+        <br>
+        <br>
+        <label for="percentage"> Percentage </label>
+        <input  id="percentage" name="percentage" type="text">
+        <br>
+        <br>
+
+        <input type="button" value="Calculate" onclick="add()">
+
+        <input type="button" value="RESET" onclick="reset()">
+        
+    </form>
+</body>
+</html>

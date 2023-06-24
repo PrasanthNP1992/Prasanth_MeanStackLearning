@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function calc(value){
+            a= parseInt(document.calc1.a.value);
+            b= parseInt(document.calc1.b.value);
+
+            if(value=="ADD"){
+                sum= a + b;
+                document.calc1.result.value = sum;
+            } else if(value=="SUB"){
+                sub= a - b;
+                document.calc1.result.value = sub;
+            } else if(value=="MUL"){
+                mul= a * b;
+                document.calc1.result.value = mul;
+            } else if(value=="DIV") {
+                division = a / b;
+                document.calc1.result.value = division;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    
+    <form name="calc1">     
+        <label for="a"> A Value </label>
+        <input   name="a" type="text">
+
+        <label for="b"> B Value</label>
+        <input   name="b" type="text">
+
+        <label for="result"> Result </label>
+        <input  name="result" type="text">
+
+        <input type="button" value="MUL" onclick="calc(value)">
+        <input type="button" value="SUB" onclick="calc(value)">
+        <input type="button" value="DIV" onclick="calc(value)">
+        <input type="button" value="ADD" onclick="calc(value)">
+
+    </form>
+</body>
+</html>
